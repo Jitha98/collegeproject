@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Form</title>
+</head>
+<body>
+<h2>College Form</h2>
+  <form action="formstudent" method="post">
+    {% csrf_token %}
+    <button><a href="{% url 'formstudent' %}">Submit</a></button>
+
+</form>
+
+</body>
+</html>
